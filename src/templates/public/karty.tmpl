@@ -1,0 +1,17 @@
+{% from "macros/fields.tmpl" import render_input_field, render_submit %}
+{% extends "shared/layout.tmpl" %}
+
+{% block title %}Forgotten password{% endblock %}
+
+{% block content %}
+  <h3>Karty Form</h3>
+
+  <form method="POST" id='insert-form'>
+    {{ form.hidden_tag() }}
+
+    {{ render_input_field(form.Cislo_Karty) }}
+    {{ render_input_field(form.Time) }}
+
+    {{ render_submit() }}
+  </form>
+{% endblock %}
