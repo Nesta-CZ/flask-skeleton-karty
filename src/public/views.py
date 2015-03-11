@@ -2,7 +2,7 @@
 Logic for dashboard related routes
 """
 from flask import Blueprint, render_template
-from .forms import vstupkarty
+from .forms import Karty
 from ..data.database import db
 from ..data.models import LogUser, karty
 from sqlalchemy import func
